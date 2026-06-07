@@ -1,0 +1,30 @@
+{
+  "type": "origins:modify_damage_taken",
+  "damage_condition": {
+    "type": "origins:or",
+    "conditions": [
+      {
+        "type": "origins:id",
+        "value": "minecraft:lava"
+      },
+      {
+        "type": "origins:id",
+        "value": "minecraft:on_fire"
+      },
+      {
+        "type": "origins:id",
+        "value": "minecraft:in_fire"
+      },
+      {
+        "type": "origins:id",
+        "value": "minecraft:hot_floor"
+      }
+    ]
+  },
+  "modifier": {
+    "operation": "multiply_total_multiplicative",
+    "value": 1.5
+  },
+  "name": "Flammable Fur",
+  "description": "Your fur is flammable, causing you to take more damage from fire and lava."
+}

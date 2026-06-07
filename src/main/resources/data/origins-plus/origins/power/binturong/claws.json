@@ -1,0 +1,16 @@
+{
+  "type": "origins:modify_damage_dealt",
+  "modifier": {
+    "operation": "add_base_early",
+    "value": 3
+  },
+  "condition": {
+    "type": "origins:not",
+    "condition": {
+      "type": "origins:equipped_item",
+      "equipment_slot": "mainhand"
+    }
+  },
+  "name": "Claws",
+  "description": "You have claws that deal extra damage, but only when you are not holding anything in your main hand."
+}

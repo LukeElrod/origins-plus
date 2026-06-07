@@ -1,0 +1,9 @@
+{
+  "type": "origins:modify_jump",
+  "modifier": {
+    "operation": "add_base_early",
+    "value": 0.175
+  },
+  "hidden": true
+}
+

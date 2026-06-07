@@ -1,0 +1,22 @@
+{
+  "type": "origins:invulnerability",
+  "damage_condition": {
+    "type": "origins:or",
+    "conditions": [
+      {
+        "type": "origins:id",
+        "value": "minecraft:cactus"
+      },
+      {
+        "type": "origins:id",
+        "value": "minecraft:sweet_berry_bush"
+      },
+      {
+        "type": "origins:id",
+        "value": "minecraft:thorns"
+      }
+    ]
+  },
+  "name": "Thick Hide",
+  "description": "You are invulnerable to pokey things."
+}

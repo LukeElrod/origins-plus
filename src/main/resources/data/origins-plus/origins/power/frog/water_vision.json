@@ -1,0 +1,31 @@
+{
+  "type": "origins:multiple",
+  "name": "Water Vision",
+  "description": "You can see clearly underwater.",
+  "water_vision": {
+    "type": "origins:water_vision",
+    "condition": {
+      "type": "origins:power_active",
+      "power": "origins-plus:secondary_key"
+    }
+  },
+  "night_vision": {
+    "type": "origins:night_vision",
+    "strength": 0.5,
+    "condition": {
+      "type": "origins:and",
+      "conditions": [
+        {
+          "type": "origins:power_active",
+          "power": "origins-plus:secondary_key"
+        },
+        {
+          "type": "origins:submerged_in",
+          "fluid": "minecraft:water"
+        }
+      ]
+    }
+  },
+  "name": "Water Vision",
+  "description": "You can see clearly underwater, but only when you want to."
+}

@@ -1,0 +1,89 @@
+{
+  "type": "origins:action_over_time",
+  "interval": 20,
+  "condition": {
+    "type": "origins:and",
+    "conditions": [
+      {
+        "type": "origins:submerged_in",
+        "fluid": "minecraft:water"
+      },
+      {
+        "type": "origins:not",
+        "condition": {
+          "type": "origins:mob_effect",
+          "effect": "minecraft:water_breathing"
+        }
+      },
+      {
+        "type": "origins:air",
+        "comparison": ">",
+        "compare_to": 0
+      }
+    ]
+  },
+  "entity_action": {
+    "type": "origins:if_else_list",
+    "actions": [
+      {
+        "condition": {
+          "type": "origins:always_true",
+          "enchantment": "minecraft:respiration",
+          "calculation": "max",
+          "comparison": "==",
+          "compare_to": 0,
+          "legacy_type": "origins:enchantment"
+        },
+        "action": {
+          "type": "origins:gain_air",
+          "value": -10
+        }
+      },
+      {
+        "condition": {
+          "type": "origins:always_true",
+          "enchantment": "minecraft:respiration",
+          "calculation": "max",
+          "comparison": "==",
+          "compare_to": 1,
+          "legacy_type": "origins:enchantment"
+        },
+        "action": {
+          "type": "origins:gain_air",
+          "value": -5
+        }
+      },
+      {
+        "condition": {
+          "type": "origins:always_true",
+          "enchantment": "minecraft:respiration",
+          "calculation": "max",
+          "comparison": "==",
+          "compare_to": 2,
+          "legacy_type": "origins:enchantment"
+        },
+        "action": {
+          "type": "origins:gain_air",
+          "value": -3
+        }
+      },
+      {
+        "condition": {
+          "type": "origins:always_true",
+          "enchantment": "minecraft:respiration",
+          "calculation": "max",
+          "comparison": "==",
+          "compare_to": 3,
+          "legacy_type": "origins:enchantment"
+        },
+        "action": {
+          "type": "origins:gain_air",
+          "value": -2
+        }
+      }
+    ]
+  },
+  "name": "Less Breath",
+  "description": "You have less breath than normal, causing you to drown faster."
+}
+

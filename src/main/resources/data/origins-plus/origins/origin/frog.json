@@ -1,0 +1,25 @@
+{
+  "powers": [
+    "origins:aqua_affinity",
+    "origins:swim_speed",
+    "origins:fall_immunity",
+    "origins:fragile",
+
+    "origins-plus:secondary_key",
+
+    "origins-plus:frog/water_vision",
+    "origins-plus:frog/burn_bar",
+    "origins-plus:frog/burn",
+    "origins-plus:frog/jump",
+    "origins-plus:frog/water_breathing",
+    "origins-plus:frog/poison",
+    "origins-plus:frog/dash"
+  ],
+  "order": 0,
+  "impact": 3,
+  "icon": {
+    "id": "minecraft:lily_pad"
+  },
+  "name": "Frog",
+  "description": "You are a frog"
+}

@@ -1,0 +1,13 @@
+{
+  "type": "origins:modify_damage_taken",
+  "damage_condition": {
+    "type": "origins:id",
+    "value": "minecraft:player_explosion"
+  },
+  "modifier": {
+    "value": 2,
+    "operation": "multiply_total_multiplicative"
+  },
+  "name": "Blast Damage",
+  "description": "You take more damage from explosions."
+}

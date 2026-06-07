@@ -1,0 +1,31 @@
+{
+  "type": "origins:multiple",
+  "toggle": {
+    "type": "origins:toggle",
+    "active_by_default": false,
+    "key": {
+      "key": "key.saveToolbarActivator",
+      "continuous": false
+    }
+  },
+  "invisibility": {
+    "type": "origins:invisibility",
+    "render_armor": false,
+    "condition": {
+      "type": "origins:power_active",
+      "power": "*:*_toggle"
+    }
+  },
+  "hunger": {
+    "type": "origins:exhaust",
+    "interval": 20,
+    "exhaustion": 4,
+    "condition": {
+      "type": "origins:power_active",
+      "power": "*:*_toggle"
+    }
+  },
+  "name": "Camoflauge",
+  "description": "You can turn invisible, but it makes you hungry."
+}
+
