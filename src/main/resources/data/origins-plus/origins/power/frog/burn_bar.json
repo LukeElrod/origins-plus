@@ -31,8 +31,16 @@
     },
     "interval": 50,
     "condition": {
-      "type": "origins:submerged_in",
-      "fluid": "minecraft:water"
+      "type": "origins:or",
+      "conditions": [
+        {
+          "type": "origins:submerged_in",
+          "fluid": "minecraft:water"
+        },
+        {
+          "type": "origins:in_rain"
+        }
+      ]
     }
   },
   "respawn": {
